@@ -100,3 +100,44 @@ for i in range(0, 10, 2):
 
 # Branching - do something only under certain circumstances
 # Exercise on page 26
+if fruits[0] == "apple":
+    print("Yum!")
+elif fruits[0] == "cardboard" or fruits[0] == "sand":
+    print("Yuck!")
+else:
+    print("Not bad.")
+#elif means "else if"
+
+# More examples of branching on page 27
+if "apple" not in fruits[0]:
+    print("Yuck")
+
+age = 5
+if age > 0 and age <= 2:
+    print("baby")
+elif age > 2 and age < 18:
+    print("child")
+else:
+    print("adult")
+
+# Example of while loop on page 28
+# continues while a condition is true
+# like a for loop with an if
+counter = 0
+
+while counter < 5:
+    print(counter)
+    counter += 1
+# += is shorthand for counter = counter + 1
+
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+alphabet[1]
+# 'b' - item in 1st position
+alphabet[2:7]
+# 'cdefg' - everything between 2nd up to 7th item in the list
+alphabet[-2:]
+# 'yz' - goes from second item to the end and everything to the end
+
+list = ["a", "b", "c", "d", "e"]
+list[:-1]
+# ['a', 'b', 'c', 'd'] - from the beginning until one item before the end
