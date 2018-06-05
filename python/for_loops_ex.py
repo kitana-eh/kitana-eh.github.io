@@ -56,10 +56,47 @@ for name in hilt_class:
     if name == hilt_class[0]:
         print(name)
 
-# for loops in dictionaries
+# On page 22 - for loops in dictionaries
 states = {"VA": "Virginia", "MD": "Maryland"}
 for code, state in states.items():
     print(code + " is code for " + state)
 # result should be the following--:
 # VA is code for Virginia
 # MD is code for Maryland
+
+# On page 23 - range
+for i in range(10):
+    print("I'm at number " + str(i))
+# using str(i) to convert the integer to a string to add text before it (or python would be confused)
+# result should be the following--:
+# I'm at number 0
+# I'm at number 1
+# I'm at number 2
+# I'm at number 3
+# I'm at number 4
+# I'm at number 5
+# I'm at number 6
+# I'm at number 7
+# I'm at number 8
+# I'm at number 9
+
+for i in range(5, 10):
+    print("I'm at number " + str(i))
+# result should be the following--:
+# I'm at number 5
+# I'm at number 6
+# I'm at number 7
+# I'm at number 8
+# I'm at number 9
+
+for i in range(0, 10, 2):
+    print("I'm at number " + str(i))
+# result should be the following--:
+# I'm at number 0
+# I'm at number 2
+# I'm at number 4
+# I'm at number 6
+# I'm at number 8
+
+# Branching - do something only under certain circumstances
+# Exercise on page 26
