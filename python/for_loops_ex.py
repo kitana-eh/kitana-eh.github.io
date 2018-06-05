@@ -55,3 +55,11 @@ hilt_class = ["Kitana", "Leslie"]
 for name in hilt_class:
     if name == hilt_class[0]:
         print(name)
+
+# for loops in dictionaries
+states = {"VA": "Virginia", "MD": "Maryland"}
+for code, state in states.items():
+    print(code + " is code for " + state)
+# result should be the following--:
+# VA is code for Virginia
+# MD is code for Maryland
