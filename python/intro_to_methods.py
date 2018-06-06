@@ -60,3 +60,34 @@ elif year_of_origin >= 1900 and year_of_origin <= 2020:
     print("Welcome to the present, time traveler!")
 else:
     print("Welcome to the past, time traveler!")
+
+# Same exercise on page 46, this time with a method to pass multiple options
+def greeting(year_of_origin):
+    if year_of_origin < 1900:
+        print("Welcome to the future, time traveler!")
+    elif year_of_origin >= 1900 and year_of_origin <= 2020:
+        print("Welcome to the present, time traveler!")
+    else:
+        print("Welcome to the past, time traveler!")
+
+greeting(1878)
+greeting(2013)
+greeting(3000)
+
+# Exercise on page 50
+birth_dates = {
+    "Emma Goldman" : 1869,
+    "Zora Neale Hurston" : 1891,
+    "James Baldwin" : 1924,
+    "Audre Lorde" : 1934,
+}
+nineteenth_c_count = 0
+twentieth_c_count = 0
+
+for author, year in birth_dates.items():
+    if year < 1900:
+        nineteenth_c_count = nineteenth_c_count + 1
+    else:
+        twentieth_c_count = twentieth_c_count + 1
+
+print("There are " + str(nineteenth_c_count) + " 19th c. births and " + str(twentieth_c_count) + " 20th c. births in my collection.")
