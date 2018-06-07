@@ -62,7 +62,7 @@ for link in links_html:
     url = link['href'].replace('blob/', '')
     urls.append("https://raw.githubusercontent.com" + url)
 # print(urls)
-
+# scrape each url to combine into a dataset (corpus_texts becomes a list containing ten different novels)
 corpus_texts = []
 for url in urls:
     print(url)
@@ -72,3 +72,12 @@ for url in urls:
     corpus_texts.append(text)
 
 print(corpus_texts)
+
+# every time the download function is called, sleep a random amount of time
+import time
+import random
+def download(url, sleep=True):
+    if sleep:
+        time.sleep(random.random() * max_sleep)
+    html = request.urlopen(url).read().decode('utf8', errors='replace')
+    return BeautifulSoup(html)
